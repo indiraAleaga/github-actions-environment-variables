@@ -1,7 +1,7 @@
 name: Java CI with Maven
 
 env:
-  NAME: 'Snyk Demo'
+  NAME: 'Snyk Idira'
 
 on:
   push:
