@@ -6,6 +6,7 @@ on:
       environment:
         description: 'Environment to run tests against'
         type: environment
+        default: dev
         required: true
   push:
     branches: [ "main" ]
@@ -28,4 +29,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Print demo 
-      run: echo "$NAME" 
+      run: echo ${{inputs.environment}}
